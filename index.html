@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前端路由原理</title>
+    <style>
+      body {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+        user-select: none;
+      }
+      ul {
+        width: 30%;
+        margin: 0 auto;
+      }
+      li {
+        list-style: none;
+        padding: 6px 8px;
+        background-color: #f5f5f5;
+        margin-top: 3px;
+      }
+      li:hover{
+        text-decoration: none;
+        cursor: pointer;
+        background-color: rgb(226, 222, 222);
+      }
+      li:active {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      
+      <p id="pathDiv"></p>
+      <p><button id="btn" data-type='HASH'>当前使用：HASH路由</button></p>
+    </div>
+    <ul class="router-list">
+      <li data-url="1">前进</li>
+      <li data-url="-1">后退</li>
+      <li id="rq"> 重置路由 </LI>
+    </ul> 
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
